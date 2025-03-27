@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Lab Task #2</title>
+    <style>
+        body {
+            background-color: black;            
+        }
+        h2 {
+            color: white;
+        }
+        .grid1 {
+            display: grid;
+            grid-template-columns: 200px 75px;
+            margin-bottom: 10px;
+            height: 20px;
+        }
+        .grid1 #col1 {
+            background-color: lightblue;
+        }
+        .grid1 #col2 {
+            background-color: pink;
+        }
+        .grid2 {
+            display: grid;
+            grid-template-columns: 50px 300px 75px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+        .grid2 #col1 {
+            background-color: lightblue;
+        }
+        .grid2 #col2 {
+            background-color: pink;
+        }
+        .grid2 #col3 {
+            background-color: lightblue;
+        }
+        .grid3 {
+            background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 10px;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+        .grid3 > div {
+            background-color: pink;
+        }
+        img {
+            width: 270px;
+            height: 250px;
+        }
+        .challenge {
+            background-color: white;
+            width: 88%;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 270px);
+            margin-bottom: 10px;
+            column-gap: 5px;
+            row-gap: 5px;
+            line-height: 0px;
+            font-family: arial;
+            align-items: center;
+            
+        }
+        .challenge #oliver {
+            box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .challenge #mimi {
+            box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .challenge #rex {
+            box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #mutual, h3{
+            margin-left: 10px;
+        }
+        #mutual {
+            color: gray;
+            font-size: small;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2px;
+        }
+        #moot {
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-bottom: -8px;
+            align-items: center ;
+            display: inline-flex;
+        }
+        #add {
+            padding: 17px;
+            width: 75px;
+            background-color: rgb(62, 62, 252);
+            color: white;
+            margin-left: 10px ;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>11a. Create a grid with two columns with width of 200px and 75px.</h2>
+    <div class="grid1">
+        <div id="col1">200px</div>
+        <div id="col2">75px</div>
+    </div>
+    <h2>11b. Create a grid with three columns. Width = 50px |remaining space| 75px.</h2>
+    <div class="grid2">
+        <div id="col1">col1</div>
+        <div id="col2">col2</div>
+        <div id="col3">col3</div>
+    </div>
+    <h2>11c. Create a grid with four equal columns that take up the entire page.</h2>
+    <div class="grid3">
+        <div id="col1">col1</div>
+        <div id="col2">col2</div>
+        <div id="col3">col3</div>
+        <div id="col4">col4</div>
+        <div id="col1">col1</div>
+        <div id="col2">col2</div>
+        <div id="col3">col3</div>
+        <div id="col4">col4</div>
+    </div>
+    <h2>11d. Continuing from exercise 10e, create this design using CSS Grid</h2>
+    <div class="challenge">
+        <div id="oliver"><img src="cat-oliver.png">
+            <h3>Oliver</h3>
+            <img id="moot" src="cat-mimi.png"><p id="mutual">2 mutual friends</p>
+            <p id="add">Add friend</p>
+        </div>
+        <div id="mimi"><img src="cat-mimi.png">
+            <h3>Mimi</h3>
+            <img id="moot" src="cat-mimi.png"><p id="mutual">3 mutual friends</p>
+            <p id="add">Add friend</p>
+        </div>
+        <div id="rex"><img src="cat-rex.png">
+            <h3>Rex</h3>
+            <img id="moot" src="cat-mimi.png"><p id="mutual">4 mutual friends</p>
+            <p id="add">Add friend</p>
+        </div>
+    </div>
+</body>
+</html>
